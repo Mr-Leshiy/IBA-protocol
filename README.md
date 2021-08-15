@@ -13,3 +13,5 @@ To do this we need to solve the folowing problems:
 1. **Blockchain connection** - we need to get possibility to connect one blockchain network to another one, so as result we need to get a decentralized connection with the two networks. In our case we do not consider to provide comunication with blockchains throught the another one, we want to avoid this uneeded layer.
 2. **Blockchain api standartization** - every blockchain has unique functionality with the unique interface, even for the coin transfering we can have two different functions with the different agrument list, argument type etc. So each blockchain should certainly know how to invoke the fucntionality from the another one. We need to simplify it and provide and standartized scheme how to call an any available function from the any blockchain.
 3. **Interaction's security providing** - we need to have a guarantee that interaction between blockchains is secure. every blockchain should know or should have possibility to validate that an action which we have been executed in the another blockchain has been successfully applied or not.
+
+## Inter-Blockchain connection layer
