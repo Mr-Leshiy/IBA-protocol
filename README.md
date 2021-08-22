@@ -34,3 +34,18 @@ Lets consider example which we have already discussed before with the two blockc
 3. At this step `Alice` and `Bob` to retrieve their coins from the Ethereum blockchain and Bitcoin blockchain respectively need to wait until these transactions will be included into the Ethereum and Bitcoin blokchains and have been finalized. As currently Bitcoin and Ethereum has a probabilistic finality so we can follow the common flow how we consider transactions to be finalized in the network. For the Bitcoin and Ethereum we need to wait until 6 blocks will be mined behind the block which contain our transaction.
 
 ## IBA transaction structure
+
+`IBA transaction` contains two parts:
+- 'If clause' action data - action that will be executed if 'Condition' action is processed successfully.
+- 'Condition' action data - action which is required for the successful completion of the 'If clause' action.
+
+General format of an IBA transaction:
+
+| Field                        | Description                                               | Size                           |
+|---                           |---                                                        |---                             |
+| Version                      | version of the IBA transaction                            | // TODO                        |
+| Timestamp                    | current transaction timestamp                             | // TODO                        |
+| 'If clause' action data size | number of bytes of the ['If clause' action data ] section | // TODO                        |
+| 'If clause' action data      | // TODO                                                   | ['If clause' action data size] |
+| 'Condition' action data size | number of bytes of the ['If clause' action data ] section | // TODO                        |
+| 'Condition' action data      | // TODO                                                   | ['Condition' action data size] |
