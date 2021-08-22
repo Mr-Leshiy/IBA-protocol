@@ -24,11 +24,13 @@ To implement an Inter-Blockchain connection layer we will use a [libp2p](https:/
 
 // TODO:
 
-## Interaction's security providing
+## IBA message passing
 
-Lets again consider the discussed before example with the two blockchains networks Bitcoin and Ethereum. `Alice` wants to exchange his Bitcoin's with `Bob` for the Ethereum's and wants to do that in the secure way but without any thirdparties as exhange. So lets decribe what need to be done during this proccess of transfering:
+Lets consider example which we have already discussed before with the two blockchain networks: Bitcoin and Ethereum. `Alice` wants to exchange Bitcoin's to the Ethereum's with `Bob` and also to do that in the secure way but without any thirdparties. Lets decribe what `Alice` and `Bob` need to do with the usage of the `IBA protocol`:
 1. Alice needs to create a new `IBA transaction` and broadcast through the Bitcoin network in the same manner like it is going with the original Bitcoin's transaction. Transaction should contains specified amount of the Bitcoin transferring from `Alice` to `Bob` and specified amount of the Ethereum trasferring amount from `Bob` to `Alice`.  Coin transferring from `Alice` to `Bob` will be done only if coin transferring from `Bob` to `Alice` will be in place.
 ![](images/Bitcoin_IBA_transaction.png)
 2. `Bob` can create the same `IBA transaction` and broadcast through the Ethereum network.
 ![](images/Ethereum_IBA_transaction.png)
 3. At this step `Alice` and `Bob` to retrieve their coins from the Ethereum blockchain and Bitcoin blockchain respectively need to wait until these transactions will be included into the Ethereum and Bitcoin blokchains and have been finalized. As currently Bitcoin and Ethereum has a probabilistic finality so we can follow the common flow how we consider transactions to be finalized in the network. For the Bitcoin and Ethereum we need to wait until 6 blocks will be mined behind the block which contain our transaction.
+
+## IBA transaction structure
