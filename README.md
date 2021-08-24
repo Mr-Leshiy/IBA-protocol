@@ -43,9 +43,9 @@ General format of an IBA transaction:
 
 | Field                        | Description                                               | Size                           |
 |---                           |---                                                        |---                             |
-| Version                      | version of the IBA transaction                            | // TODO                        |
-| Timestamp                    | current transaction timestamp                             | // TODO                        |
-| 'If clause' action data size | number of bytes of the ['If clause' action data ] section | // TODO                        |
+| Version                      | version of the IBA transaction                            | 4 bytes                        |
+| Timestamp                    | current transaction timestamp                             | 8 bytes                        |
+| 'If clause' action data size | number of bytes of the ['If clause' action data ] section | 4 bytes                        |
 | 'If clause' action data      | // TODO                                                   | ['If clause' action data size] |
-| 'Condition' action data size | number of bytes of the ['If clause' action data ] section | // TODO                        |
+| 'Condition' action data size | number of bytes of the ['If clause' action data ] section | 4 bytes                        |
 | 'Condition' action data      | // TODO                                                   | ['Condition' action data size] |
