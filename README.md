@@ -20,9 +20,9 @@ To implement an Inter-Blockchain connection layer we will use a [libp2p](https:/
 
 // TODO: define a specific protocol stack with from libp2p library.
 
-## Blockchain api standartization
+## IBA script
 
-// TODO:
+To standardize each blockchain functionality, that it will be easily implement in any other blockchain, we propose to use `IBA script`. `IBA script` - it is staked based, processed from left to right. It is not Turing-complete. Actually it is the same as you could see `Bitcoin's` script.
 
 ## IBA message passing
 
